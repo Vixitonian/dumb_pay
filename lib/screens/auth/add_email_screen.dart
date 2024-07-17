@@ -38,7 +38,7 @@ class _AddEmailScreenState extends State<AddEmailScreen> {
                     if (emailController.text.trim().isNotEmpty) {
                       context
                           .read<AuthProvider>()
-                          .signUp(context, emailController.text.trim());
+                          .getEmailToken(context, emailController.text.trim());
                     } else {
                       print('Email field is Empty');
                       ScaffoldMessenger.of(context).showSnackBar(

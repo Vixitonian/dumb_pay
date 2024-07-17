@@ -80,7 +80,7 @@ class _AddBioScreenState extends State<AddBioScreen> {
                     if (fullNameController.text.trim().isNotEmpty &&
                         countryCode.trim().isNotEmpty &&
                         passwordController.text.trim().isNotEmpty) {
-                      context.read<AuthProvider>().finalSignUp(context,
+                      context.read<AuthProvider>().register(context,
                           fullName: fullNameController.text.trim(),
                           username: usernameController.text.trim(),
                           countryCode: countryCode,

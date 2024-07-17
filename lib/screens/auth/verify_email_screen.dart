@@ -28,7 +28,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                "We send a code to ( *****@mail.com ). Enter it here to verify your identity",
+                "We send a code to ( ${context.read<AuthProvider>().email} ). Enter it here to verify your identity",
                 textAlign: TextAlign.center,
               ),
             ),
